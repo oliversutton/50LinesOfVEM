@@ -18,7 +18,7 @@ following three arguments:
 2. a function handle to a function implementing the PDE right hand side, e.g. `@square_domain_rhs`
 3. a function handle to a function implementing the PDE boundary condition, e.g. `@square_domain_boundary_condition`
 
-So, for example, Figure 3(a) in the paper [1] can be produce by calling:
+So, for example, Figure 3(a) in the paper [1] can be produced by calling:
 
 ```MATLAB
 u = vem('source/meshes/voronoi.mat',@square_domain_rhs, @square_domain_boundary_condition);
@@ -38,7 +38,7 @@ The `meshes` subdirectory contains files specifying various polygonal meshes:
 
 - `L-domain.mat` : a Voronoi polygonal mesh of an L-shaped domain
 - `non-convex.mat`: a mesh of a square-shaped domain consisting of non-convex polygonal elements
-- `smoothed-voronoi.mat` : a mesh of a square-shaped domain, formed of a Voronoi mesh which has been smoothed using Lloyd's algorithm as implemented by PolyMesher
+- `smoothed-voronoi.mat` : a mesh of a square-shaped domain, formed of a Voronoi mesh which has been smoothed using Lloyd's algorithm as implemented by [Polymesher](https://paulino.ce.gatech.edu/journal_papers/2012/SMO_12_PolyMesher.pdf)
 - `squares.mat`: a mesh of a square-shaped domain consisting of square elements
 - `triangles.mat`: a mesh of a square-shaped domain consisting of triangular elements
 - `voronoi.mat`: a Voronoi mesh of a square-shaped domain, formed using random centroids
